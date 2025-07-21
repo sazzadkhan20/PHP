@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>* - Denotes Required Information </p>
+<p>> 1 Donation    > 2 Confirmation      > Thank you!</p>
+<p style = "color:red;font-size:150%;">Donor Information</p>
+<form action="/action_page.php">
+  <label for="fname">First name*</label>
+  <input type="text" id="fname" name="fname"><br></br>
+  <label for = "lname">Last Name*</label>
+  <input type = "text" id = "lname" name="lname"> <br></br>
+  <label for = "cname">Company</label>
+  <input type = "text" id = "cname" name="cname"> <br></br>
+  <label for = "ad1">Address 1*</label>
+  <input type = "text" id = "ad1" name="ad1"> <br></br>
+  <label for = "ad2">Address 2</label>
+  <input type = "text" id = "ad2" name="ad2"> <br></br>
+  <label for = "city">City*</label>
+  <input type = "text" id = "city" name="city"> <br></br>
+  <label for = "state">State*</label>
+  <select id="st" name="st">
+    <option value="Nikunjo">Nikunjo</option>
+    <option value="Bonani">Bonani</option>
+    <option value="Gulshan">Gulshan</option>
+    <option value="Dhanmondi">Dhanmondi</option>
+  </select><br></br>
+  <label for = "zipcode">Zip Code*</label>
+  <input type = "text" id = "zipcode" name="zipcode"> <br></br>
+  <label for = "country">Country*</label>
+  <select id="country" name="country">
+    <option value="Bangladesh">Bangladesh</option>
+    <option value="USA">USA</option>
+    <option value="India">India</option>
+    <option value="Pakistan">Pakistan</option>
+  </select><br></br>
+ <label for = "phone">Phone</label>
+  <input type = "text" id = "phone" name="phone"> <br></br>
+  <label for = "fax">Fax</label>
+  <input type = "text" id = "fax" name="fax"> <br></br>
+  <label for = "email">Email* </label>
+  <input type = "text" id = "email" name="email"> <br></br>
+  <label for = "damount">Donation Amount* </label>
+  <input type="radio" id="none" name="none" value="None">
+  <label for = "none">None </label>
+  <input type="radio" id="f" name="f" value="$50">
+  <label for = "f">$50 </label>
+  <input type="radio" id="f" name="f" value="$50">
+  <label for = "f">$75 </label>
+  <input type="radio" id="s" name="s" value="$50">
+  <label for = "s">$100 </label>
+  <input type="radio" id="t" name="t" value="$50">
+  <label for = "t">$250 </label>
+  <input type="radio" id="other" name="other" value="other">
+  <label for = "other">Other </label><br></br>
+  <label for = "oamount">Other Amount $ </label>
+  <input type = "text" id = "oamount" name="oamount"> <br></br>
+  <label for = "redonation">Recurring Donation </label>
+  <input type="checkbox" id = "redonate" name = "redonate" value = "redonate">
+  <label for = "redonate">I am interested in giving on a regular basis </label><br><br>
+  <label for = "mocc">Monthly Credit Card $ </label>
+  <input type = "number" id = "mocc" name="mocc">
+  <label for = "for"> For </label>
+  <input type = "text" id = "for" name="for">
+   <label for = "mo"> Months </label><br><br>
+ <p style = "color:red;font-size:150%;">Honorarium and Memorial Donation Information</p>
+  <label for = "gw">I would like to make this donation </label>
+  <input type="radio" id="th" name="th" value="th">
+  <label for = "th"> To Honor </label>
+  <input type="radio" id="im" name="im" value="im">
+  <label for = "im"> In Memory of </label><br><br>
+   <label for="name">Name </label>
+  <input type="text" id="name" name="name"><br></br>
+  <label for = "acd">Acknowledge Donation to </label>
+  <input type = "text" id = "acd" name="acd"> <br></br>
+  <label for = "address">Address </label>
+  <input type = "text" id = "address" name="address"> <br></br>
+  <label for = "cty">City </label>
+  <input type = "text" id = "cty" name="cty"> <br></br>
+  <label for = "city">City</label>
+  <input type = "text" id = "city" name="city"> <br></br>
+  <label for = "state">State </label>
+  <select id="st" name="st">
+    <option value="Nikunjo">Nikunjo</option>
+    <option value="Bonani">Bonani</option>
+    <option value="Gulshan">Gulshan</option>
+    <option value="Dhanmondi">Dhanmondi</option>
+  </select><br></br>
+  <label for = "zipcode">Zip </label>
+  <input type = "text" id = "zipcode" name="zipcode"> <br></br>
+  <p style = "color:red;font-size:150%;">Additional Information</p>
+  <lable for = "name"> Pease enter your name,company or organization as you would like it to appear in our publications</label><br><br>
+<label for="name">Name </label>
+  <input type="text" id="name" name="name"><br></br>
+  <input type="checkbox" id = "write1" name = "write1" value = "write1">
+  <label for = "write1">I would like my gift to remain anonymous.</label><br>
+  <input type="checkbox" id = "write2" name = "write2" value = "write2">
+  <label for = "write2">My empolyer offers a matching gift program.I will mail the matching gift form.</label><br>
+  <input type="checkbox" id = "write3" name = "write3" value = "write3">
+  <label for = "write3">Please save the cost of acknowledging this gift by not mailing a thank you letter.</label><br>
+<label for = "comment">Comments</label><br>
+<textarea id = "comment" name = "comment",row = "3",cols = "50"> </textarea><br>
+<label>How may we contact you?</label><br>
+<label><input type="checkbox" id="recurring " name="recurring">E-Mail</label><br>
+<label><input type="checkbox" id="recurring" name="recurring">Postal Mail</label><br>
+<label><input type="checkbox" id="recurring" name="recurring">Telephone</label><br>
+<label><input type="checkbox" id="recurring" name="recurring">Fax</label><br><br>
+
+<label>I would like to recive newsletter and information about special event by:</label><br>
+<label><input type="checkbox" id="recurring" name="recurring">E-Mail</label><br>
+<label><input type="checkbox" id="recurring" name="recurring">Postal Mail</label><br><br>
+
+
+
+<label><input type="checkbox" id="recurring" name="recurring">I would like information about volunteering with the.....</label><br><br>
+<button type = "button" onclick = "alert'(Reset)'">Reset</button>
+<button type = "button" onclick = "alert'(Continue)'">Continue</button>
+
+</form>
+
+</body>
+</html>
+
