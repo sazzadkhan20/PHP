@@ -1,144 +1,125 @@
-.Star
-{
-    color : red;
-    display: inline;
+.Star {
+  color: red;
+  display: inline;
 }
-.header
-{
-    color:red;
-    font-weight:bold;
-    font-size: 130%;
+.header {
+  color: red;
+  font-weight: bold;
+  font-size: 130%;
 }
-.DenotesRInfo
-{
-    display: inline;
+.DenotesRInfo {
+  display: inline;
 }
-.Donation
-{
-    display: inline;
+.Donation {
+  display: inline;
 }
-.Confirmation
-{
-    display: inline;
-    margin-left: 50px;
+.Confirmation {
+  display: inline;
+  margin-left: 50px;
 }
-.Thank
-{
-    display: inline;
-    margin-left: 50px;
+.Thank {
+  display: inline;
+  margin-left: 50px;
 }
-.message1
-{
-    display: inline;
-    font-size: small;
-    margin-left: 25px;
+.message1 {
+  display: inline;
+  font-size: small;
+  margin-left: 25px;
 }
-.message2
-{
-    display: inline;
-    font-size: small;
-    margin-left: 110px;
+.message2 {
+  display: inline;
+  font-size: small;
+  margin-left: 110px;
 }
-.message3
-{
-    display: inline;
-    font-size: small;
-    margin-left: 50px;
+.message3 {
+  display: inline;
+  font-size: small;
+  margin-left: 50px;
 }
-.message4
-{
-    display: inline;
-    font-size: small;
+.message4 {
+  display: inline;
+  font-size: small;
 }
-.message5
-{
-    display: inline;
-    font-size: small;
-    color: gray;
+.message5 {
+  display: inline;
+  font-size: small;
+  color: gray;
 }
-.fname
-{
-    display: inline;
-    font-size: small;
-    font-weight:bold;
-    margin-left: 170px;
+.fname {
+  display: inline;
+  font-size: small;
+  font-weight: bold;
+  margin-left: 170px;
 }
-.fnamet
-{
-    display: inline;
-    size: small;
-    font-weight: bold;
-    font-size: small;
-    margin-left: 10px;
+.fnamet {
+  display: inline;
+  size: small;
+  font-weight: bold;
+  font-size: small;
+  margin-left: 10px;
 }
-.cname
-{
-    display: inline;
-    font-size: small;
-    margin-left: 28px;
+.cname {
+  display: inline;
+  font-size: small;
+  margin-left: 28px;
 }
-.address1
-{
-    display: inline;
-    size: small;
-    font-size: small;
-    margin-left: 16px;
+.address1 {
+  display: inline;
+  size: small;
+  font-size: small;
+  margin-left: 16px;
 }
 
-.city
-{
-    display: inline;
-    size: small;
-    font-size: small;
-    margin-left: 45px;
+.city {
+  display: inline;
+  size: small;
+  font-size: small;
+  margin-left: 45px;
 }
-.state
-{
-    display: inline;
-    font-size: small;
-    margin-left: 41px;
+.state {
+  display: inline;
+  font-size: small;
+  margin-left: 41px;
 }
-.acknowledge
-{
-    display: inline;
-    size: small;
-    font-size: small;
-    margin-left: 48px;
+.acknowledge {
+  display: inline;
+  size: small;
+  font-size: small;
+  margin-left: 48px;
 }
-.country
-{
-    display: inline;
-    font-size: small;
-    margin-left: 20px;
+.country {
+  display: inline;
+  font-size: small;
+  margin-left: 20px;
 }
-.fax
-{
-    display: inline;
-    font-size: small;
-    font-weight: bold;
-    margin-left: 53px;
+.fax {
+  display: inline;
+  font-size: small;
+  font-weight: bold;
+  margin-left: 53px;
 }
-.damount
-{
-    display: inline;
-    font-size: small;
-    font-weight:bold;
-    margin-left: 110px;
+.damount {
+  display: inline;
+  font-size: small;
+  font-weight: bold;
+  margin-left: 110px;
 }
-.redonate
-{
-    display: inline;
-    size: small;
-    font-size: small;
-    margin-left: 5px;
+.redonate {
+  display: inline;
+  size: small;
+  font-size: small;
+  margin-left: 5px;
 }
-.button1
-{
-    display:inline;
-    margin-left: 180px;
+.button1 {
+  display: inline;
+  margin-left: 180px;
 }
-.button2
-{
-    display:inline;
-    margin-left: 30px;
+.button2 {
+  display: inline;
+  margin-left: 30px;
+}
+.submit {
+  margin-left: 200px;
+  color: blue;
+  size: 30px;
 }

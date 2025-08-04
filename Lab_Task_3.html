@@ -2,29 +2,33 @@
 <html>
 <body style = "background-color: rgb(206,190, 199);">
 <link rel = "stylesheet" href = "Registration_Form_Style.css">
+<script src = "MyScript.js"> </script>>
 <p class = "Star">* </p>
 <p class = "DenotesRInfo">- Denotes Required Information </p><br><br>
 <p class = "Donation"><b>>1 Donation  </p></b>
 <p class = "Confirmation"> > 2 Confirmation     </p> 
 <p class = "Thank">>3 Thank you!</p><br><br>
 <label class ="header">Donor Information</label><br><br>
-<form action="/action_page.php">
-  <label class="fname">First name</label>
+<form name= "MainForm"class="mainForm" onsubmit="return validateForm()" >
+  <label id = "textFiled" class="fname" name = "fname">First name</label> 
   <p class = "Star">* </p>
-  <input type="text" class="fnamet" name="fnamet"><br></br>
+  <input type="text" class="fnamet" id="fname"><br></br>
   <label class="fname">Last Name</label>
   <p class = "Star">* </p>
-  <input type="text" class="fnamet" name="fnamet"><br></br>
+  <input type="text" id="fname" class="fnamet" name="fnamet"><br></br>
+   <label class="fname">Password</label>
+  <p class = "Star">* </p>
+  <input type="password" id="fname" class="fnamet" name="fnamet"><br></br>
   <label class="fname">Company</label>
   <input type="text" class="cname" name="cname"><br></br>
   <label class="fname">Address 1</label>
   <p class = "Star">* </p>
-  <input type="text" class="address1" name="fnamet"><br></br>
+  <input type="text" id="fname" class="address1" name="fnamet"><br></br>
   <label class="fname">Address 2</label>
-  <input type="text" class="cname" name="fnamet"><br></br>
+  <input type="text" id="fname" class="cname" name="fnamet"><br></br>
   <label class="fname">City</label>
   <p class = "Star">* </p>
-  <input type="text" class="city" name="fnamet"><br></br>
+  <input type="text" id="fname" class="city" name="fnamet"><br></br>
   <label class="fname">State</label>
   <p class = "Star">* </p>
   <select class="state" name="st">
@@ -47,10 +51,10 @@
   <label class="fname">Phone</label>
   <input type="text" class="state" name="fnamet"><br></br>
   <label class="fname">Fax</label>
-  <input type = "text" class="fax" name="fax"> <br></br>
+  <input type = "text" id="fname" class="fax" name="fax"> <br></br>
   <label class="fname">Email</label>
   <p class = "Star">* </p>
-  <input type="text" class="cname" name="fnamet"><br></br>
+  <input type="text" id="fname" class="cname" name="fnamet"><br></br>
   <label class = "damount">Donation Amount </label>
   <p class = "Star">* </p>
   <input type="radio" id="none" name="none" value="None">
@@ -88,7 +92,7 @@
   <label class="fax">Acknowledge Donation to </label>
   <input type = "text" class="acknowledge" name="fax"> <br></br>
   <label class="fname">Address</label>
-  <input type = "text" class="cname" name="fax"> <br></br>
+  <input type = "text" id="fname" class="cname" name="fax"> <br></br>
   <label class="fname">City</label>
   <input type = "text" class="acknowledge" name="fax"> <br></br>
   <label class="fname">State</label>
@@ -126,8 +130,12 @@
 
 
 <label><input type="checkbox" id="recurring" name="recurring">I would like information about volunteering with the.....</label><br><br>
-<button type="button" class="button1" onclick="validateForm()">Submit</button>
-<button type = "button" class="button2" onclick = "alert'(Continue)'">Continue</button><br>
+<div class="submit">
+            <button type="submit" class="submitButton">Submit</button>
+            <p id="errorMessage"></p>
+        </div>
+<!-- <button type = "submit" class="button1" onclick = "validateForm()">Reset</button>
+<button type = "button" class="button2" onclick = "alert'(Continue)'">Continue</button><br> -->
 <label>Donate Online with confidence. You are on a secure server</label><br>
 <label class = "message4">If you have any problems or questions, please contact</label>
 <label class = "message5">support</label>
