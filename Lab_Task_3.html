@@ -2,36 +2,33 @@
 <html>
 <body style = "background-color: rgb(206,190, 199);">
 <link rel = "stylesheet" href = "Registration_Form_Style.css">
-<script src = "MyScript.js"> </script>>
+<script defer src = "MyScript.js"> </script>>
 <p class = "Star">* </p>
 <p class = "DenotesRInfo">- Denotes Required Information </p><br><br>
 <p class = "Donation"><b>>1 Donation  </p></b>
 <p class = "Confirmation"> > 2 Confirmation     </p> 
 <p class = "Thank">>3 Thank you!</p><br><br>
 <label class ="header">Donor Information</label><br><br>
-<form name= "MainForm"class="mainForm" onsubmit="return validateForm()" >
-  <label id = "textFiled" class="fname" name = "fname">First name</label> 
+<form onsubmit="return validateForm()">
+  <label class="fname">First name</label>
   <p class = "Star">* </p>
-  <input type="text" class="fnamet" id="fname"><br></br>
+  <input type="text" class="fnamet"  name="fnamet" id = "firstName"><br></br>
   <label class="fname">Last Name</label>
   <p class = "Star">* </p>
-  <input type="text" id="fname" class="fnamet" name="fnamet"><br></br>
-   <label class="fname">Password</label>
-  <p class = "Star">* </p>
-  <input type="password" id="fname" class="fnamet" name="fnamet"><br></br>
+  <input type="text" class="fnamet" name="fnamet" id = "lastName"><br></br>
   <label class="fname">Company</label>
   <input type="text" class="cname" name="cname"><br></br>
   <label class="fname">Address 1</label>
   <p class = "Star">* </p>
-  <input type="text" id="fname" class="address1" name="fnamet"><br></br>
+  <input type="text" class="address1" name="fnamet" id = "firstAddress"><br></br>
   <label class="fname">Address 2</label>
-  <input type="text" id="fname" class="cname" name="fnamet"><br></br>
+  <input type="text" class="cname" name="fnamet"><br></br>
   <label class="fname">City</label>
   <p class = "Star">* </p>
-  <input type="text" id="fname" class="city" name="fnamet"><br></br>
+  <input type="text" class="city" name="fnamet" id = "cityInfo"><br></br>
   <label class="fname">State</label>
   <p class = "Star">* </p>
-  <select class="state" name="st">
+  <select class="state" name="st" id = "stateInfo">
     <option value="Nikunjo">Nikunjo</option>
     <option value="Bonani">Bonani</option>
     <option value="Gulshan">Gulshan</option>
@@ -39,7 +36,7 @@
   </select><br></br>
   <label class="fname">Zip Code</label>
   <p class = "Star">* </p>
-  <input type="text" class="address1" name="fnamet"><br></br>
+  <input type="text" class="address1" name="fnamet" id = "zipCode"><br></br>
   <label class="fname">Country</label>
   <p class = "Star">* </p>
   <select class="country" name="country">
@@ -51,29 +48,29 @@
   <label class="fname">Phone</label>
   <input type="text" class="state" name="fnamet"><br></br>
   <label class="fname">Fax</label>
-  <input type = "text" id="fname" class="fax" name="fax"> <br></br>
+  <input type = "text" class="fax" name="fax"> <br></br>
   <label class="fname">Email</label>
   <p class = "Star">* </p>
-  <input type="text" id="fname" class="cname" name="fnamet"><br></br>
+  <input type="text" class="cname" name="fnamet" id = "email"><br></br>
   <label class = "damount">Donation Amount </label>
   <p class = "Star">* </p>
-  <input type="radio" id="none" name="none" value="None">
+  <input type="radio" id="none" name="donationAmount" value="None">
   <label for = "none">None </label>
-  <input type="radio" id="f" name="f" value="$50">
+  <input type="radio" id="f" name="donationAmount" value="$50">
   <label for = "f">$50 </label>
-  <input type="radio" id="f" name="f" value="$50">
+  <input type="radio" id="f" name="donationAmount" value="$50">
   <label for = "f">$75 </label>
-  <input type="radio" id="s" name="s" value="$50">
+  <input type="radio" id="s" name="donationAmount" value="$50">
   <label for = "s">$100 </label>
-  <input type="radio" id="t" name="t" value="$50">
+  <input type="radio" id="t" name="donationAmount" value="$50">
   <label for = "t">$250 </label>
-  <input type="radio" id="other" name="other" value="other">
+  <input type="radio" id="other" name="donationAmount" value="other">
   <label for = "other">Other </label><br>
   <p class = "message1">(check a button or type in your account)</p>
   <label class = "fnamet"><b>Other Amount $ </label></b>
   <input type = "text" class = "fnamet" name="oamount"> <br>
   <label class = "damount">Recurring Donation </label>
-  <input type="checkbox"  name = "redonate" value = "redonate">
+  <input type="checkbox"  name = "redonate" value = "redonate" id = "agree">
   <label class = "redonate">I am interested in giving on a regular basis </label><br>
   <p class = "message2">(check if yes)</p><br>
   <label for = "mocc">Monthly Credit Card $ </label>
@@ -92,7 +89,7 @@
   <label class="fax">Acknowledge Donation to </label>
   <input type = "text" class="acknowledge" name="fax"> <br></br>
   <label class="fname">Address</label>
-  <input type = "text" id="fname" class="cname" name="fax"> <br></br>
+  <input type = "text" class="cname" name="fax"> <br></br>
   <label class="fname">City</label>
   <input type = "text" class="acknowledge" name="fax"> <br></br>
   <label class="fname">State</label>
@@ -130,12 +127,7 @@
 
 
 <label><input type="checkbox" id="recurring" name="recurring">I would like information about volunteering with the.....</label><br><br>
-<div class="submit">
-            <button type="submit" class="submitButton">Submit</button>
-            <p id="errorMessage"></p>
-        </div>
-<!-- <button type = "submit" class="button1" onclick = "validateForm()">Reset</button>
-<button type = "button" class="button2" onclick = "alert'(Continue)'">Continue</button><br> -->
+<button type = "submit" class = "button1">Submit</button><br>
 <label>Donate Online with confidence. You are on a secure server</label><br>
 <label class = "message4">If you have any problems or questions, please contact</label>
 <label class = "message5">support</label>
